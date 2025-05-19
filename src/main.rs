@@ -1,5 +1,3 @@
-pub mod lib;
-
 use futures::{
     future::{BoxFuture, FutureExt},
     task::{waker_ref, ArcWake},
@@ -108,6 +106,7 @@ fn main() {
         println!("figo's computer: done!");
     });
 
+     println!("figo's computer: hey hey!");
     // Drop the spawner so that our executor knows it is finished and won't
     // receive more incoming tasks to run.
     drop(spawner);
